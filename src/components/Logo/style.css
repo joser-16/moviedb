@@ -1,0 +1,11 @@
+.text-logo {
+    color: var(--letter-color);
+    padding: 0;
+    margin: 0;
+}
+
+.vmr-text {
+    color: var(--rate-color);
+    font-size: .8em;
+    text-transform: uppercase;
+}
