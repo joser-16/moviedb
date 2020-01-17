@@ -1,0 +1,20 @@
+.movie-general {
+    margin-top: 2em;
+}
+
+.general-title {
+    color: var(--letter-color);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .general-title {
+        text-align: left;
+    }
+}
+
+.general {
+    margin-top: .5em;
+    color: var(--letter-color);
+}

@@ -1,0 +1,46 @@
+.movie-container {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@media screen and (min-width: 768px) {
+    .movie-container {
+        flex-direction: row-reverse;
+    }
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+    .movie {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.movie-description {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .movie-description {
+        width: 60%;
+    }
+}
+
+.movie-data-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .movie-data-icons {
+        width: 100%;
+    }
+}

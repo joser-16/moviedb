@@ -1,0 +1,19 @@
+.movie-icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: var(--letter-color);
+    font-size: 1.5em;
+}
+
+.icon-rate {
+    color: var(--rate-color);
+}
+
+.info {
+    font-size: .9em;
+    margin-left: .5em;
+    color: var(--letter-color);
+}

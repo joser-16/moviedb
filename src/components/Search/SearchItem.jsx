@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SearchItem = ({imdbId, title, year}) => (
-    <a href={`http://www.omdbapi.com/?apikey=44c563a8&i=${imdbId}&plot=full`}
-        target="_blank"
+    <Link to={`/movies/${imdbId}`}
     >
         <li className="searches-item">
             {title} 
@@ -10,7 +10,7 @@ const SearchItem = ({imdbId, title, year}) => (
                 ({year})
             </span> 
         </li>
-    </a>
+    </Link>
 )
 
 export default SearchItem
