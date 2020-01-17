@@ -10,7 +10,11 @@ const Search = () => {
     const setDynamicSearches = e => {
 
         Axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=44c563a8&s=${e.target.value}`)
-        .then( response => setSearches(response.data.Search) )
+        .then( response => {
+            if(response.data.Response) {
+                setSearches(response.data.Search)
+            }
+        })
     }
 
     useEffect( () => {
@@ -50,14 +54,14 @@ const Search = () => {
                         ? <li className="searches-item">
                             Sin resultados
                         </li>
-                        : searches.map(search => (
+                        : searches.map( (search, key) => (
                             <SearchItem 
-                                key={search.imdbID}
+                                key={key}
                                 imdbId={search.imdbID}
                                 title={search.Title}
                                 year={search.Year}
                             />
-                            )
+                        )
                         )
                     }
                 </ul>
